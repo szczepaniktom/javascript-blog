@@ -89,17 +89,21 @@ function generateTags(){
     let html = '';
     /* get tags from data-tags attribute */
     const articleTags = article.getAttribute('data-tags');
+
     /* split tags into array */
-
+    const articleTagsArray = articleTags.split(' ');
     /* START LOOP: for each tag */
-
+    for(let tag of articleTagsArray){
       /* generate HTML of the link */
-
+      const linkHTML = '<li><a href="#' + tag + '"><span>' + tag + '</span></a></li>';
       /* add generated code to html variable */
+    }
 
     /* END LOOP: for each tag */
 
     /* insert HTML of all the links into the tags wrapper */
+    titleList.innerHTML = html;
+    console.log(titleList)
   }
   /* END LOOP: for every article: */
 }
