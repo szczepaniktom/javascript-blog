@@ -118,3 +118,27 @@ body {
     margin: 0 10px 0 0;
   }
 }
+.tags.list li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.tag-size-1 {
+  font-size: 100%;
+  color: black;
+}
+.tag-size-2 {
+  font-size: 130%;
+  color: orange;
+}
+.tag-size-3 {
+  font-size: 170%;
+  color: blue;
+}
+.tag-size-4 {
+  font-size: 210%;
+  color: green;
+}
+.tag-size-5 {
+  font-size: 250%;
+  color: red;
+}
